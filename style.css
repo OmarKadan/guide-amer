@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 20px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+
+
+.collapsible {
+    background-color: rgba(163, 192, 202, 0.5);
+    color: #f1e9e9;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    transform: perspective(500px) translateZ(1px); 
+}
+
+.collapsible:hover {
+    background-color: rgba(55, 157, 190, 0.7);
+  
+}
+.collapsible.active, .collapsible:hover {
+    background-color: #80b3d4;
+}
+
+
+.arrow {
+    transition: transform 0.3s ease; 
+}
+
+
+.collapsible.active .arrow {
+    transform: rotate(90deg);
+}
+
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 1px;
+    transition: max-height 0.3s ease; 
+    opacity: 0;
+    margin-bottom: 2px;
+}
+
+.collapsible.active + .content {
+    max-height: 100px; 
+    opacity: 1;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    background-color: rgb(179, 196, 196);
+}

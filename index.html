@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--java script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const collapsibles = document.querySelectorAll(".collapsible");
+            collapsibles.forEach(button => {
+                button.addEventListener("click", function() {
+                    
+                    this.classList.toggle("active");
+    
+                    
+                    const content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null; 
+                        content.style.opacity = 0;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px"; 
+                        content.style.opacity = 1;
+                    }
+                });
+            });
+        });
+    </script>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons for Amer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: white;">Lessons, what we have learned - جميع الدروس وماذا تعلمنا</h1>
+
+    <hr>
+
+    <div class="lessons">
+        <div class="lesson">
+            <button class="collapsible">Lesson 1 - الدرس الاول
+                <span class="arrow">➤</span>
+            </button>
+            <div class="content">
+                    <ul>
+                        <li>
+                            File Explorer - مستخرج الملفات 
+                            <a href="https://support.microsoft.com/en-us/windows/find-and-open-file-explorer-ef370130-1cca-9dc5-e0df-2f7416fe1cb1#WindowsVersion=Windows_10" target="_blank">help</a>
+                        </li>
+                        <li>
+                            Task Manager - حركات المرور والمواقع المفتوحه  
+                            <a href="https://learn.microsoft.com/en-us/shows/inside/task-manager" target="_blank">help</a>
+                        </li>
+                        <li>
+                            Windows Basic Settings - اعدادات الاساسيه لويندوز 
+                            <a href="ms-settings:" target="_blank" role="button" class="ocpExternalLink supLinkButton" data-bi-type="anchor">Settings</a>
+                        </li>
+                        <li>
+                            Windows Security Settings - اعدادات الحمايه 
+                            <a href="ms-settings:windowsdefender?activationSource=SMC-Article-4013263" target="_blank" role="button" class="ocpExternalLink supLinkButton" data-bi-type="anchor">Windows Security settings</a>
+                        </li>
+                        <li>
+                            Control Panel Basics - منصه التحكم (حذف تطبيقات واداره)
+                            <a href="https://www.computerhope.com/jargon/c/controlp.htm" target="_blank" role="button" class="ocpExternalLink supLinkButton">Control Panel</a>
+                        </li>
+                        <li>
+                            Disk Management - اداره جميع المساحات
+                            <a href="https://learn.microsoft.com/en-us/windows-server/storage/disk-management/overview-of-disk-management" target="_blank">help</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <button class="collapsible">Lesson 2 - الدرس الثاني
+                <span class="arrow">➤</span>
+            </button>
+            <div class="content">
+                <ul>
+                    <li>
+                        <strong>OS - أنظمة التشغيل:</strong>
+                        <ul>
+                            <li>Windows 10, 8.1, XP</li>
+                            <li>Linux - نظام تشغيل يستخدم في بيئات متعددة، ويدعم مهام الاختراق.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Full-Advanced Windows Settings:</strong>
+                        <p>إعدادات متقدمة لويندوز (ضغط shift عندما نعمل اعادة تشغيل).</p>
+                    </li>
+                    <li>
+                        <strong>GPU Drivers and Performance:</strong>
+                <p>ديسكات وأداء كرت الشاشة (<a href="https://www.nvidia.com/en-eu/geforce/geforce-experience/" target="_blank">Geforce Experience</a>).</p>
+                    </li>
+                    <li>
+                        <strong>CMD - موجه الأوامر:</strong>
+                        <ul>
+                            <li><strong>Basic CMD Commands:</strong>
+                                <ul>
+                                    <li><strong>cd</strong> - لدخول للملفات</li>
+                                    <li><strong>كيف نستعمل cd:</strong> cd (الملف الذي تريد الدخول عليه)<br> مثال: cd Downloads بعدها اضغط Enter</li>
+                                    <li><strong>dir</strong> - لرؤية الملفات التي داخل الملف.</li>
+                                    <li><strong>ren</strong> - تغيير من اسم لاسم.<br> مثال: ren (اسم الملف الجديد الذي تريد تغييره) (اسم الملف الذي تريد تغييره)</li>
+                                    <li><strong>cls</strong> - لحذف المكتوب في CMD.</li>
+                                   <br>
+                                   <a href="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion" target="_blank"> <b>ادخل هنا بعدها ادخل للفيديو للتعليمات</b></a>
+                                   <br>
+                                    <a href="https://www.youtube.com/watch?v=y9LAZpow-5w" target="_blank"> <b>فيديو لتحميل برنامح الذي يحمل برامج الوهميه</b> </a> 
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <button class="collapsible">Lesson 3 - الدرس الثالث
+                <span class="arrow">➤</span>
+            </button>
+            <div class="content">
+                <ul>
+                    <li><strong>Firewall (جدار الحمايه):</strong> 
+                        الجدار الناري هو نظام أمني يراقب ويُحكِم حركة البيانات بين الشبكات، لمنع الوصول غير المصرح به وحماية الأنظمة من التهديدات.
+                        له قوانين عند التهديدات مثل ايبي خصوصي. 
+                        لرؤية <a href="https://www.mediafire.com/folder/m1ubs1p2n0apj/شرح+جدار+الحمايه" target="_blank">صور جدار الحمايه</a>.
+                    </li>
+                    <li><strong>IP (بروتوكول الإنترنت):</strong> عنوان رقمي يُستخدم لتحديد الأجهزة المتصلة بالشبكة وتمكين التواصل بينها.</li>
+                    <li><strong>LAN (الشبكة المحلية):</strong> شبكة تربط الأجهزة داخل منطقة جغرافية صغيرة، مثل المنزل أو المكتب، لتبادل البيانات بسرعة.</li>
+                    <li><strong>WAN (الشبكة الواسعة):</strong> شبكة تربط أجهزة أو شبكات عبر مسافات جغرافية كبيرة، مثل الإنترنت الذي يربط شبكات LAN متعددة في مناطق مختلفة.</li>
+                    <li><strong>لرؤية ال IP الخاص بك:</strong> نستخدم الأمر <code>ipconfig</code>.</li>
+                    <li><strong>لرؤية ال IP الخاص بموقع معين:</strong> نستخدم الأمر <code>ping</code>.
+                        <br>مثال: <code>ping google.com</code> 
+                        <br>النتيجة: <code>142.250.75.78</code> (هذا هو الـ IP).
+                    </li>
+                    <li><strong>لتغيير كلمة المرور في حالة نسيانها:</strong>
+                        <ol>
+                            <li>اضغط على مفتاح <strong>Shift</strong> ثم إعادة التشغيل.</li>
+                            <li>افتح موجه الأوامر (CMD) واذهب إلى <code>C:\Windows\System32</code>.</li>
+                            <li>استخدم الأمر <code>ren Utilman.exe Utilman1.exe</code> لتغيير اسم <code>Utilman.exe</code>.</li>
+                            <li>استخدم الأمر <code>ren cmd.exe Utilman.exe</code> لتغيير اسم <code>cmd.exe</code>.</li>
+                            <li>افتح موجه الأوامر من شاشة تسجيل الدخول واستخدم الأمر <code>control userpasswords2</code>.</li>
+                            <li>لإعادة كل شيء لحالته الأصلية: 
+                                <code>ren Utilman.exe cmd.exe</code> ثم <code>ren Utilman1.exe Utilman.exe</code>.
+                            </li>
+                        </ol>
+                        <em>ملاحظة:</em> موجه الأوامر هو CMD.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <button class="collapsible">Lesson 4 - الدرس الرابع
+                <span class="arrow">➤</span>
+            </button>
+            <div class="content">
+                <ul>
+                    <li><strong>Understanding File Extensions & Associations:</strong> فهم امتدادات الملفات والربط بين البرامج</li>
+                    <li><strong>Disk Partitioning (Advanced Disk Management):</strong> تقسيم القرص (إدارة القرص المتقدمة)</li>
+                    <li><strong>Task Scheduling and Automation:</strong> جدولة المهام والأتمتة</li>
+                    <li><strong>File and Folder Permissions:</strong> أذونات الملفات والمجلدات</li>
+                    <li><strong>System Resource Monitoring & Optimizing:</strong> مراقبة موارد النظام وتحسين الأداء</li>
+                    <li><strong>Virtual Memory and Page File Management:</strong> إدارة الذاكرة الافتراضية وملف الصفحة</li>
+                    <li><strong>Advanced Search Features:</strong> ميزات البحث المتقدمة</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <button class="collapsible">Lesson 5 - الدرس الخامس
+                <span class="arrow">➤</span>
+            </button>
+            <div class="content">
+                <ul>
+                    <li><strong>What is a Network? - ما هي الشبكة؟</strong>
+                        <br>Explanation of LAN & WAN - شرح الشبكات المحلية (LAN) والشبكات الواسعة (WAN).
+                    </li>
+                    <li><strong>IP Address and MAC Address - عنوان IP وعنوان MAC</strong>
+                        <br>Understanding IP and MAC addresses - فهم عنوان IP وعنوان MAC.
+                    </li>
+                    <li><strong>How the Internet Works? - كيف يعمل الإنترنت؟</strong>
+                        <br>Overview of data transfer over the internet - نظرة عامة على كيفية نقل البيانات عبر الإنترنت.
+                    </li>
+                    <li><strong>Routers, Switches, and Modems, Alfa adapters - الموجهات والمحولات والمودمات و Alfa adapters</strong>
+                        <br>Basics of network hardware - أساسيات الأجهزة الشبكية.
+                    </li>
+                    <li><strong>Introduction to Bandwidth and Latency - مقدمة إلى عرض النطاق الترددي والزمن المتأخر</strong>
+                        <br>Understanding bandwidth and latency in networks - فهم عرض النطاق الترددي والزمن المتأخر في الشبكات.
+                    </li>
+                    <li><strong>Intrusion Detection Systems (IDS) & Intrusion Prevention Systems (IPS) - أنظمة كشف التطفل (IDS) وأنظمة منع التطفل (IPS)</strong>
+                        <br>Introduction to IDS and IPS - مقدمة لأنظمة كشف ومنع التطفل.
+                    </li>
+                    <li><strong>Access Control - التحكم في الوصول</strong>
+                        <br>Methods of network access control - طرق التحكم في الوصول للشبكات.
+                    </li>
+                    <li><strong>Virtual Private Network (VPN) - الشبكة الافتراضية الخاصة (VPN)</strong>
+                        <br>Basics of VPNs and their uses - أساسيات الشبكات الافتراضية الخاصة وفوائدها.
+                    </li>
+                    <li><strong>Data Encryption (SSL) & Wireless Security (WPA2, WPA3) & Email Security & Cloud Security - تشفير البيانات (SSL) وأمان الشبكات اللاسلكية (WPA2، WPA3) وأمان البريد الإلكتروني وأمان السحابة</strong>
+                        <br>Overview of encryption and security protocols - نظرة عامة على بروتوكولات التشفير والأمان.
+                    </li>
+                    <li><strong>Example of how Hacking works - مثال على كيفية عمل الاختراق</strong>
+                        <br>Basic illustration of hacking techniques - مثال بسيط لأساليب الاختراق.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <button class="collapsible">Lesson 6 - الدرس السادس
+                <span class="arrow">➤</span>
+            </button>
+            <div class="content">
+                <ol>
+                    <li><strong>Introduction to System Backup and Recovery - مقدمة إلى النسخ الاحتياطي واستعادة النظام</strong>
+                        <ul>
+                            <li>Full Backup - النسخ الاحتياطي الكامل</li>
+                            <li>Incremental Backup - النسخ الاحتياطي التدريجي</li>
+                            <li>Differential Backup - النسخ الاحتياطي التفاضلي</li>
+                        </ol>
+                        <p>مثال سريع: تخيل أن لديك 10 ملفات، وقمت بعمل نسخ احتياطي على مدار ثلاثة أيام:</p>
+                        <ol>
+                            <li>اليوم الأول: النسخ الاحتياطي الكامل — تم نسخ جميع الملفات الـ 10.</li>
+                            <li>اليوم الثاني: النسخ الاحتياطي التدريجي — تم نسخ الملفات الثلاثة التي تغيرت في اليوم الثاني فقط.</li>
+                            <li>اليوم الثالث: النسخ الاحتياطي التفاضلي — تم نسخ جميع التغييرات منذ النسخ الاحتياطي الكامل في اليوم الأول (ربما 4 ملفات إذا تغير ملف آخر).</li>
+                        </ol>
+                    </li>
+                    <li><strong>Disk Cleanup and System Maintenance - تنظيف القرص وصيانة النظام</strong>
+                        <ul>
+                            <li>Using Disk Cleanup tools - استخدام أدوات تنظيف القرص</li>
+                            <li>Managing startup programs for faster boot times - إدارة برامج بدء التشغيل لتسريع أوقات الإقلاع</li>
+                            <li>Uninstalling unused programs and managing system space - إلغاء تثبيت البرامج غير المستخدمة وإدارة مساحة النظام (دليل Revo)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Installing and Managing Software - تثبيت البرامج وإدارتها</strong>
+                        <ol>
+                            <li>How to check for safe software sources (download from trusted sources) - كيفية التحقق من مصادر البرامج الآمنة (التحميل من مصادر موثوقة)</li>
+                        </ol>
+                        <p>رابط للتحقق من البرامج الضارة: <a href="https://www.virustotal.com/" target="_blank">Virus Total</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <button class="collapsible">Lesson 7 - الدرس السابع
+                <span class="arrow">➤</span>
+            </button>
+            <div class="content">
+                <ol>
+                    <li>All Common Network Ports and Their Uses - جميع المنافذ الشائعة للشبكة واستخداماتها (شرح مختصر)</li>
+                    <li>How SSL/TLS Works - كيفية عمل SSL/TLS</li>
+                    <li>Symmetric vs. Asymmetric Encryption - التشفير المتماثل مقابل التشفير غير المتماثل</li>
+                    <ul>
+                        <li><a href="https://cdn.prod.website-files.com/664e6b29f3ed49c2317db2f2/665e2ea22c3013835416b6b9_62df01d48ccbc0c270176291_rrss_01-1024x1024.png" target="_blank">Symmetric - التشفير المتماثل</a></li>
+                        <li><a href="https://cdn.prod.website-files.com/664e6b29f3ed49c2317db2f2/665e2ea22c3013835416b6bd_62df01d48ccbc01d1f176292_rrss_02-1024x1024.png" target="_blank">Asymmetric - التشفير غير المتماثل</a></li>
+                    </ul>
+                    <li>Root (Android) , Jailbreak (iPhone) - الروت للأندرويد وجيلبريك للآيفون</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <button class="collapsible">Lesson 8 - الدرس الثامن
+                <span class="arrow">➤</span>
+            </button>
+            <div class="content">
+                <ol>
+                    <li>التشفير المتماثل مقابل التشفير غير المتماثل (متقدم، عملية الهكر) - Symmetric vs. Asymmetric Encryption (Advanced, Hacker Process)
+                        <span style="font-weight: bold;">30/30 علامة</span>
+                    </li>
+        
+                    <li>الروت للأندرويد وجيلبريك للآيفون - Root (Android), Jailbreak (iPhone)
+                        <span style="font-weight: bold;">10/10</span>
+                    </li>
+        
+                    <li>أين يقوم المبرمجون عادةً ببرمجة المواقع الإلكترونية، الألعاب - Where programmers usually program websites, games</li>
+        
+                    <li>أساسيات Visual Studio Code - Visual Studio Code Basics</li>
+        
+                    <li>مطور الويب (تطوير الواجهة الأمامية، تطوير الواجهة الخلفية، تطوير كامل الستاك) - Web Developer (Front-End Development, Back-End Development, Full-Stack Development)</li>
+        
+                    <li>عملية التعلم، ماذا سنتعلم؟
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+        
+                    <li>ما هو HTML؟ وما هي استخداماته؟ - أساسيات HTML
+                        <ul>
+                            <li><b>&lt;h1&gt; - &lt;h6&gt;</b>: تستخدم لتحديد العناوين من الأكبر (&lt;h1&gt;) إلى الأصغر (&lt;h6&gt;).  
+                                مثال: &lt;h1&gt;العنوان الرئيسي&lt;/h1&gt;
+                            </li>
+                            <li><b>&lt;!DOCTYPE html&gt;</b>: تعرّف نوع المستند وإصدار HTML المستخدم.</li>
+                            <li><b>&lt;p&gt;</b>: وسم الفقرة لإضافة نصوص عامة في الصفحة.
+                                مثال: &lt;p&gt;هذه فقرة.&lt;/p&gt;
+                            </li>
+                            <li><b>&lt;img&gt;</b>: لإضافة صورة، ويحتاج إلى خاصية <code>src</code> لتحديد مسار الصورة.
+                                مثال: &lt;img src="image.jpg" alt="الوصف"&gt;
+                            </li>
+                            <li><b>&lt;audio&gt;</b>: يستخدم لتضمين ملفات الصوت مع خاصية <code>src</code> أو باستخدام عناصر &lt;source&gt; داخلية.
+                                مثال: &lt;audio controls&gt;&lt;source src="audio.mp3"&gt;&lt;/audio&gt;
+                            </li>
+                            <li><b>&lt;video&gt;</b>: لتضمين ملفات الفيديو، وهو مشابه لـ &lt;audio&gt;.
+                                مثال: &lt;video controls&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;
+                            </li>
+                            <li><b>&lt;body&gt;</b>: يحتوي على المحتوى الأساسي للصفحة.</li>
+                            <li><b>&lt;html&gt;</b>: العنصر الجذري الذي يحيط بكل محتوى HTML.</li>
+                            <li><b>&lt;head&gt;</b>: يحتوي على معلومات وبيانات تعريفية عن المستند، مثل الروابط والعنوان.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>  
+                <div class="lesson">
+                    <button class="collapsible">الوظائف
+                        <span class="arrow">➤</span>
+                    </button>
+                    <div class="content"> 
+                        <p><b>: قم بعمل كود كهاذه الصفحه </b></p>
+                        <a href="https://imgur.com/VEV2j4x"> اضغط هنا</a>
+                    
+
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
