@@ -5,7 +5,6 @@
     font-style: italic;
 }
 
-
 body {
     font-family: 'Merriweather', serif;
     margin: 20px;
@@ -16,16 +15,12 @@ body {
     background-color: #ffffff;
     background-attachment: fixed;
     height: 100vh;
-
 }
-
 
 h1 {
     font-size: 24px;
     color: #333;
 }
-
-
 
 .collapsible {
     background-color: rgba(163, 192, 202, 0.5);
@@ -49,22 +44,19 @@ h1 {
 
 .collapsible:hover {
     background-color: rgba(55, 157, 190, 0.7);
-  
 }
+
 .collapsible.active, .collapsible:hover {
     background-color: #80b3d4;
 }
-
 
 .arrow {
     transition: transform 0.3s ease; 
 }
 
-
 .collapsible.active .arrow {
     transform: rotate(90deg);
 }
-
 
 .content {
     padding: 0 18px;
@@ -83,4 +75,16 @@ h1 {
     opacity: 1;
     transition: max-height 0.3s ease, opacity 0.3s ease;
     background-color: rgb(179, 196, 196);
+}
+
+.code-box {
+    background-color: #2e2e2e; 
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: monospace; 
+    border-radius: 5px; 
+    overflow-x: auto;
+    line-height: 1.6; 
+    border: 1px solid #444; 
 }
