@@ -639,70 +639,129 @@
             </div>
         </div>
     </div>
+
     <div class="lesson">
-        <button class="collapsible">وظائف
+        <button class="collapsible">Lesson 12 - Complex Tables, Metadata, Division, Span
             <span class="arrow">➤</span>
         </button>
         <div class="content">
-            <h3>استخدم جميع الذي تعلمناه في هذا المربع 
-                وقم بصناعه موقع فيهم لغرض التدريب لامتحان يوم الخميس</h3>
+            <h3>شرح الجداول المعقدة، الميتاداتا، القسم (div)، ووسم النصوص (span)</h3>
+    
+            <!-- Complex Table Example -->
             <div class="code-box">
-                <!--HTML Structure using all learned tags-->
-                &lt;!DOCTYPE html&gt;<br>
-                &lt;html&gt;<br>
-                &nbsp;&nbsp;&lt;head&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
-                &nbsp;&nbsp;&lt;/head&gt;<br>
-                &nbsp;&nbsp;&lt;body&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt; hello &lt;/a&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;/p&gt;<br>
-              
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt; إلى &lt;h6&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style=&quot;text-align: center&quot;&gt;Center Text&lt;/h1&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style=&quot;text-align: left&quot;&gt;Left Text&lt;/h1&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style=&quot;text-align: right&quot;&gt;Right Text&lt;/h1&gt;<br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;&quot; width=&quot;&quot; height=&quot;&quot;&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;video controls src=&quot;&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/video&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;audio controls src=&quot;&quot;&gt;&lt;/audio&gt;<br>
-              
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
-              
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br>
-              
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;dl&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Term 1&lt;/dt&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Description for term 1&lt;/dd&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Term 2&lt;/dt&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Description for term 2&lt;/dd&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Term 3&lt;/dt&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Description for term 3&lt;/dd&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/dl&gt;<br>
-              
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br>
-              
-                &nbsp;&nbsp;&lt;/body&gt;<br>
-                &lt;/html&gt;
-              </div>
+                <h2>Complex Table Example</h2>
+                <p>في هذا المثال، يتم عرض جدول باستخدام خصائص rowspan و colspan لإدارة الخلايا:</p>
+    
+                <!-- Displaying the result of the table -->
+                <table border="1" cellspacing="0" cellpadding="0" style="width:100%; text-align:center; color:white; border-collapse: collapse; background-color: black;">
+                    <tr>
+                        <td rowspan="2" width="40" height="50">1</td>
+                        <td rowspan="2" width="50">2</td>
+                    </tr>
+                    <tr>
+                        <td width="120">3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="4">4</td>
+                        <td colspan="8" height="10">5</td>
+                    </tr>
+                    <tr>
+                        <td colspan="8" height="10">6</td>
+                    </tr>
+                </table>
+    
+                <!-- Displaying the HTML code -->
+                <pre><code style="color: lightgreen;">
+    &lt;table border="1" cellspacing="0" cellpadding="0"&gt;
+      &lt;tr&gt;
+        &lt;td rowspan="2" width="40" height="50"&gt;1&lt;/td&gt;
+        &lt;td rowspan="2" width="50"&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td width="120"&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td colspan="2" rowspan="4"&gt;4&lt;/td&gt;
+        &lt;td colspan="8" height="10"&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td colspan="8" height="10"&gt;6&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+                </code></pre>
+            </div>
+    
+            <!-- Explanation of Span -->
+            <div class="code-box">
+                <h2>What is a Span?</h2>
+                <p>
+                    <strong>Span</strong> هو وسم يُستخدم لتحديد جزء معين من النصوص لإجراء تعديل معين عليه، مثل إضافة لون أو تنسيق خاص.
+                </p>
+                <p><strong>Example:</strong></p>
+                <pre><code style="color: lightgreen;">
+    &lt;p&gt;This is a &lt;span style="color: red;"&gt;highlighted&lt;/span&gt; text.&lt;/p&gt;
+                </code></pre>
+            </div>
+    
+            <!-- Explanation of Div -->
+            <div class="code-box">
+                <h2>What is a Div?</h2>
+                <p>
+                    <strong>Div</strong> هو وسم يُستخدم لتحديد قسم معين في الصفحة يمكن تخصيصه أو ترتيبه كما ترغب.
+                </p>
+                <p><strong>Example:</strong></p>
+                <pre><code style="color: lightgreen;">
+    &lt;div style="background-color: darkcyan;"&gt;
+      &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+    &lt;/div&gt;
+                </code></pre>
+                <div class="code-box">
+                    <h2>What is Metadata?</h2>
+                    <p>الميتاداتا هي معلومات عن صفحة الويب تساعد في تحسين محركات البحث (SEO) وتقديم معلومات إضافية حول المحتوى.</p>
+        
+                    <h3>Types of Metadata:</h3>
+                    <ul style="color: lightgreen;">
+                        <li><strong>&lt;meta&gt;:</strong> تستخدم لإضافة معلومات إضافية عن الصفحة مثل الوصف والكلمات المفتاحية.</li>
+                        <li><strong>&lt;meta charset&gt;:</strong> يحدد ترميز الأحرف المستخدم في الصفحة.</li>
+                        <li><strong>&lt;meta name="viewport"&gt;:</strong> يتحكم في كيفية عرض الصفحة على الأجهزة المحمولة.</li>
+                        <li><strong>&lt;meta name="description"&gt;:</strong> يضيف وصفاً مختصراً لصفحة الويب يظهر في نتائج محركات البحث.</li>
+                        <li><strong>&lt;meta name="keywords"&gt;:</strong> يحدد كلمات مفتاحية تستخدم لتحسين محركات البحث.</li>
+                        <li><strong>&lt;meta name="author"&gt;:</strong> يحدد مؤلف الصفحة.</li>
+                    </ul>
+        
+                    <h3>Example of Metadata:</h3>
+                    <pre><code style="color: lightgreen;">
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+          &lt;meta name="description" content="This is an example of a meta description"&gt;
+          &lt;meta name="keywords" content="HTML, metadata, tutorial"&gt;
+          &lt;meta name="author" content="Your Name"&gt;
+          &lt;title&gt;My Web Page&lt;/title&gt;
+        &lt;/head&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- وظــائف Section -->
+<div class="lesson">
+    <button class="collapsible">وظائف - تدريب على الجداول
+        <span class="arrow">➤</span>
+    </button>
+    <div class="content">
+        <h3>يجب التدريب على الجداول لدرس الأسبوع الجاي</h3>
+
+        <!-- Image in Black Box -->
+        <div class="code-box">
+            <img src="https://i.postimg.cc/cHnNCdkq/qQoZX.png" alt="Training Task Image" style="width:100%; border: 2px solid black;">
+        </div>
+    </div>
+</div>
+
+    
+    
                         
     
 </body>
