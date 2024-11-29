@@ -744,21 +744,161 @@
             </div>
         </div>
     </div>
+    <div class="lesson">
+        <button class="collapsible">Lesson 13 - Complex Tables, Iframes, Buttons, Inputs
+            <span class="arrow">➤</span>
+        </button>
+        <div class="content">
+            <!-- Iframes -->
+            <div class="code-box">
+                <h2>Iframes</h2>
+                <p>An <strong>iframe</strong> يُستخدم  لعرض موقع ويب داخل صندوق، مما يسمح بتضمين صفحة ويب داخل أخرى. ومع ذلك، يُستخدم في كثير من الأحيان بطرق مشبوهة وتقنيات اختراق، مثل هجمات التصيد أو تحميل محتوى ضار دون علم المستخدم</p>
+                <p>Example:</p>
+                <iframe src="https://www.example.com" width="300" height="200" style="border: 1px solid white;"></iframe>
+    
+                <!-- Displaying the iframe code -->
+                <pre><code style="color: lightgreen;">
+        &lt;iframe src="https://www.example.com" width="300" height="200"&gt;&lt;/iframe&gt;
+                </code></pre>
+            </div>
+    
+            <!-- Buttons -->
+            <div class="code-box">
+                <h2>Buttons</h2>
+                <p>الأزرار في  تُستخدم لتشغيل إجراءات معينة عند الضغط عليها، مثل إرسال البيانات إلى الخادم أو تنفيذ أحداث برمجية باستخدام </p>
+                <p>أنواع الأزرار:</p>
+                <ul>
+                    <li><strong>Submit:</strong> لإرسال البيانات في النموذج.</li>
+                    <li><strong>Reset:</strong> لإعادة ضبط القيم إلى حالتها الافتراضية.</li>
+                    <li><strong>Button:</strong> زر عادي يُستخدم مع JavaScript لإضافة وظائف معينة.</li>
+                </ul>
+                <p>مثال:</p>
+                <button>Click Me</button>
+                <pre><code style="color: lightgreen;">
+        &lt;button&gt;Click Me&lt;/button&gt;
+                </code></pre>
+                 <!-- Input Types -->
+    <h3>Input جميع انواع</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: white;">
+        <thead>
+            <tr style="background-color: #37415C; text-align: left;">
+                <th style="padding: 8px; border: 1px solid #FDA481;">Input انواع</th>
+                <th style="padding: 8px; border: 1px solid #FDA481;">نتيجه</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color: #242E49;">
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    &lt;input type="text" placeholder="Enter text"&gt;
+                </td>
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    <input type="text" placeholder="Enter text">
+                </td>
+            </tr>
+            <tr style="background-color: #37415C;">
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    &lt;input type="password" placeholder="Enter password"&gt;
+                </td>
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    <input type="password" placeholder="Enter password">
+                </td>
+            </tr>
+            <tr style="background-color: #242E49;">
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    &lt;input type="submit" &gt;
+                </td>
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+            <tr style="background-color: #37415C;">
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    &lt;input type="reset" &gt;
+                </td>
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+            <tr style="background-color: #242E49;">
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    &lt;input type="checkbox"&gt; 
+                </td>
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    <input type="checkbox"> 
+                </td>
+            </tr>
+            <tr style="background-color: #37415C;">
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    &lt;input type="radio"&gt; 
+                </td>
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    <input type="radio"> 
+                </td>
+            </tr>
+            <tr style="background-color: #242E49;">
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    &lt;input type="date"&gt;
+                </td>
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    <input type="date">
+                </td>
+            </tr>
+            <tr style="background-color: #37415C;">
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    &lt;input type="file"&gt;
+                </td>
+                <td style="padding: 8px; border: 1px solid #FDA481;">
+                    <input type="file">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            </div>
+    
+            <!-- Forms -->
+            <div class="code-box">
+                <h2>Forms</h2>
+                <p>النماذج في HTML تُستخدم لجمع بيانات المستخدم وإرسالها إلى الخادم لمعالجتها.</p>
+                <p>المثال:</p>
+                <form>
+                    <label for="amer">First Name:</label>
+                    <input type="text" id="amer" placeholder="Here">
+    
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" placeholder="pass here">
+                </form>
+                <pre><code style="color: lightgreen;">
+        &lt;form&gt;
+            &lt;label for="amer"&gt;First Name:&lt;/label&gt;
+            &lt;input type="text" id="amer" placeholder="Here"&gt;
+    
+            &lt;label for="pass"&gt;Password:&lt;/label&gt;
+            &lt;input type="password" id="pass" placeholder="pass here"&gt;
+        &lt;/form&gt;
+                </code></pre>
+    
+                <p>شرح:</p>
+                <ul>
+                    <li><strong>&lt;form&gt;</strong>: لإنشاء نموذج لجمع البيانات.</li>
+                    <li><strong>&lt;label&gt;</strong>: لوضع عنوان لحقل الإدخال.</li>
+                    <li><strong>&lt;input&gt;</strong>: لإنشاء حقول إدخال مختلفة (مثل النص وكلمة المرور).</li>
+                </ul>
+    
+                <p>أنواع الإدخالات:</p>
+                <ul>
+                    <li>Text: إدخال نصوص.</li>
+                    <li>Password: إدخال كلمة المرور.</li>
+                    <li>Email: إدخال بريد إلكتروني.</li>
+                    <li>Number: إدخال أرقام.</li>
+                    <li>File: تحميل الملفات.</li>
 
-    <!-- وظــائف Section -->
-<div class="lesson">
-    <button class="collapsible">وظائف - تدريب على الجداول
-        <span class="arrow">➤</span>
-    </button>
-    <div class="content">
-        <h3>يجب التدريب على الجداول لدرس الأسبوع الجاي</h3>
-
-        <!-- Image in Black Box -->
-        <div class="code-box">
-            <img src="https://i.postimg.cc/cHnNCdkq/qQoZX.png" alt="Training Task Image" style="width:100%; border: 2px solid black;">
+                    
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+    
+
 
     
     
