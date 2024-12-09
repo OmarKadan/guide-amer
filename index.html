@@ -897,6 +897,150 @@
             </div>
         </div>
     </div>
+
+    <!-- Lesson 14 -->
+<button class="collapsible">Lesson 14 - Practicing on Tags, Inputs, Styles</button>
+<div class="content">
+    <div class="code-box">
+        <p>اصنع موقع يحتوي على جميع Inputs</p>
+        <p>نيتجتك (للملف الذي تم صنعه بناء على السؤال):</p>
+
+        <a href="5122024.html" style="color: lightblue;">اضغط هنا لرؤيه النتيجه</a>
+
+        <div style="background-color: #1e1e1e; padding: 10px; border-radius: 8px; margin-top: 10px;">
+            <pre><code style="color: lightgreen;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1 style="text-align: center"&gt;Achievement&lt;/h1&gt;
+&lt;dl&gt;
+    &lt;dt style="color: blue;"&gt;Achievement:&lt;/dt&gt;
+    &lt;dd style="color: rgb(0, 255, 21);"&gt;is a term that represents the successful completion of a goal or task through effort,
+        dedication, and perseverance. It can range from small daily accomplishments,
+        like organizing your workspace, to major life milestones, such as earning a degree or launching a business.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;hr&gt;
+
+&lt;h2&gt;Enter your information to access the site:-&lt;/h2&gt;
+&lt;form&gt;
+    &lt;label for="amer"&gt;First Name:&lt;/label&gt;
+    &lt;input type="text" id="amer" placeholder="Here"&gt;
+
+    &lt;br&gt;&lt;br&gt;
+    &lt;label for="pass"&gt;Last Name:&lt;/label&gt;
+    &lt;input type="text" id="pass" placeholder="pass here"&gt;
+    &lt;br&gt;
+
+    &lt;input type="reset"&gt;
+    &lt;a href="https://omarkadan.github.io/guide-amer/"&gt;
+        &lt;input type="button"&gt;
+    &lt;/a&gt;
+&lt;/form&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;form&gt;
+    &lt;label for="amer"&gt;Your Email:&lt;/label&gt;
+    &lt;input type="email" id="amer" placeholder="Here"&gt;
+
+    &lt;br&gt;&lt;br&gt;
+    &lt;label for="pass"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="pass" placeholder="pass here"&gt;
+&lt;/form&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;form&gt;
+    &lt;label for="pass"&gt;Your Date of Birth:&lt;/label&gt;
+    &lt;input type="date" id="pass" placeholder="pass here"&gt;
+&lt;/form&gt;
+
+&lt;br&gt;
+&lt;h3&gt;You can agree by clicking this button &lt;input type="checkbox"&gt;&lt;/h3&gt;
+
+&lt;br&gt;
+&lt;h4&gt;Write your favorite file here&lt;/h4&gt;
+&lt;input type="file"&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </div>
+
+        <hr>
+
+        <h3>Explaining Required Attribute</h3>
+        <p>عند استخدام الخاصية <span style="color: yellow;">required</span> في الحقول، يتم التأكد من إدخال المستخدم بيانات في هذه الحقول قبل إرسال النموذج. إذا ترك المستخدم الحقل فارغاً، تظهر رسالة تنبيهية.</p>
+        <p>مثال:</p>
+        <div style="background-color: #1e1e1e; padding: 10px; border-radius: 8px; margin-top: 10px;">
+            <pre><code style="color: lightgreen;">
+&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" <span style="color: yellow;">required</span>&gt;
+
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" <span style="color: yellow;">required</span>&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </code></pre>
+        </div>
+        <p>النتيجة:</p>
+        <p>اضغط على زر "Submit" دون إدخال البيانات لرؤية النتيجة:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <input type="submit" value="Submit">
+        </form>
+        <p>إذا لم يتم إدخال أي بيانات، ستظهر الرسالة التنبيهية: "هذا الحقل مطلوب."</p>
+
+        <hr>
+
+        <h3>Method Types (GET vs POST)</h3>
+        <p>في النماذج، تُستخدم الخاصيتان <span style="color: rgb(0, 240, 248);">method="GET"</span> و<span style="color: rgb(0, 238, 255);">method="POST"</span> لتحديد كيفية إرسال البيانات:</p>
+        <ul>
+            <li><strong>GET:</strong> تُرسل البيانات عبر عنوان URL، وهي مناسبة للبيانات العامة وغير الحساسة.</li>
+            <li><strong>POST:</strong> تُرسل البيانات في جسم الطلب، وهي مثالية للمعلومات الحساسة مثل كلمات المرور.</li>
+        </ul>
+        <p>مثال:</p>
+        <div style="background-color: #1e1e1e; padding: 10px; border-radius: 8px; margin-top: 10px;">
+            <pre><code style="color: lightgreen;">
+&lt;form method="<span style="color: rgb(0, 243, 252);">POST</span>" <span style="color: rgb(254, 254, 255);">action="submit.php"</span>&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username" <span style="color: yellow;">required</span>&gt;
+
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password" <span style="color: yellow;">required</span>&gt;
+
+    &lt;input type="submit" value="Login"&gt;
+&lt;/form&gt;
+            </code></pre>
+        </div>
+        <p>النتيجة:</p>
+        <p>عند الإرسال باستخدام <code>POST</code>، سيتم إرسال البيانات إلى الملف <strong>submit.php</strong>.</p>
+        <form method="POST" action="https://php-testing-server.freewebhostmost.com/submit.php" target="_blank">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <input type="submit" value="Login" >
+        </form>
+    </div>
+</div>
+
     
 
 
