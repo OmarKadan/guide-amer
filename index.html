@@ -1228,6 +1228,125 @@
     </div>
 </div>
 
+<button class="collapsible">Lesson 17: CSS, Colors, Borders, Aligning</button>
+<div class="content">
+    <h2>CSS Aligning Form in Center</h2>
+    <p>لجعل نموذج أو عنصر يظهر في وسط الصفحة، يمكنك استخدام الخصائص التالية في CSS:</p>
+    <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 10px; border-radius: 8px; font-family: monospace;">
+        <code>
+        position: absolute;<br>
+        top: 50%;<br>
+        left: 50%;<br>
+        transform: translate(-50%, -50%);
+        </code>
+    </div>
+    <p>شرح الخصائص:</p>
+    <ul>
+        <li><strong>position: absolute;</strong> لتحديد العنصر بالنسبة للصفحة وليس العنصر الذي يحتويه.</li>
+        <li><strong>top: 50%;</strong> يجعل العنصر يبدأ من منتصف الصفحة عموديًا.</li>
+        <li><strong>left: 50%;</strong> يجعل العنصر يبدأ من منتصف الصفحة أفقيًا.</li>
+        <li><strong>transform: translate(-50%, -50%);</strong> يضبط الإزاحة النهائية للعنصر ليكون في المركز تمامًا.</li>
+    </ul>
+
+    <h2>CSS Colors</h2>
+    <p>الألوان في CSS يمكن تطبيقها على الخلفيات والعناصر النصية باستخدام الخصائص:</p>
+    <ul>
+        <li><strong>background-color:</strong> لتعيين لون الخلفية.</li>
+        <li><strong>color:</strong> لتعيين لون النص.</li>
+    </ul>
+    <p>مثال:</p>
+    <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 10px; border-radius: 8px; font-family: monospace;">
+        <code>
+        body {<br>
+        &nbsp;&nbsp;background-color: #f0f0f0;<br>
+        &nbsp;&nbsp;color: #333;<br>
+        }
+        </code>
+    </div>
+
+    <h2>CSS Borders</h2>
+    <p>لإظهار الحدود بمختلف أنواعها، قمنا بفصل كل نوع داخل جدول مخصص:</p>
+
+    <h3>Border: Solid</h3>
+    <table style="border-collapse: collapse; width: 100%; background-color: #f9f9f9; font-family: Arial, sans-serif; border: 2px solid #444;">
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border: 2px solid #444;">
+                    <div style="border: 2px solid black; padding: 10px;">Solid Border</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Border: Dotted</h3>
+    <table style="border-collapse: collapse; width: 100%; background-color: #f9f9f9; font-family: Arial, sans-serif; border: 2px solid #444;">
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border: 2px solid #444;">
+                    <div style="border: 2px dotted black; padding: 10px;">Dotted Border</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Border: Dashed</h3>
+    <table style="border-collapse: collapse; width: 100%; background-color: #f9f9f9; font-family: Arial, sans-serif; border: 2px solid #444;">
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border: 2px solid #444;">
+                    <div style="border: 2px dashed black; padding: 10px;">Dashed Border</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Border: Double</h3>
+    <table style="border-collapse: collapse; width: 100%; background-color: #f9f9f9; font-family: Arial, sans-serif; border: 2px solid #444;">
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border: 2px solid #444;">
+                    <div style="border: 4px double black; padding: 10px;">Double Border</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Border: Rounded</h3>
+    <table style="border-collapse: collapse; width: 100%; background-color: #f9f9f9; font-family: Arial, sans-serif; border: 2px solid #444;">
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border: 2px solid #444;">
+                    <div style="border: 2px solid black; border-radius: 10px; padding: 10px;">Rounded Corners</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+
+   <h2><b>فوق في عندك انواع حدود 
+    وهون بتلاقيهن كلهن للتجربه : <a href="examples.css">اضغط هون</a></b></h2>
+
+    <h2>Example for External CSS Linking</h2>
+    <p>لتوصيل CSS خارجي بملف HTML:</p>
+    <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 10px; border-radius: 8px; font-family: monospace;">
+        <code>
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br>
+        &lt;/head&gt;
+        </code>
+    </div>
+    <p>وفي ملف CSS، يمكن تطبيق الأسلوب التالي:</p>
+    <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 10px; border-radius: 8px; font-family: monospace;">
+        <code>
+        h1 {<br>
+        &nbsp;&nbsp;background-color: rgba(163, 192, 202, 0.5);<br>
+        &nbsp;&nbsp;color: #f1e9e9;<br>
+        &nbsp;&nbsp;text-align: left;<br>
+        &nbsp;&nbsp;display: inline;<br>
+        }
+        </code>
+    </div>
+</div>
 
 
     
