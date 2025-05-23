@@ -104,11 +104,12 @@ h1 {
 
 #lesson21 .css-sidebar {
   position: fixed;
+  color: white;
   top: 0;
   left: 0;
   height: 100vh;
   width: 0;
-  background: rgba(0, 255, 255, 0.3);
+  background-color: rgb(114, 114, 165);
   overflow-y: auto;
   transition: width 0.4s ease;
   z-index: 2000;
