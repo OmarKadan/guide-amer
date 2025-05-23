@@ -88,3 +88,94 @@ h1 {
     line-height: 1.6; 
     border: 1px solid #444; 
 }
+
+
+
+/* Scope everything under #lesson21 */
+#lesson21 .btn-transparent {
+  background: rgba(0,123,255,0.2);
+  color: #007bff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+#lesson21 .css-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background: rgba(0, 255, 255, 0.3);
+  overflow-y: auto;
+  transition: width 0.4s ease;
+  z-index: 2000;
+  padding-top: 60px;
+}
+#lesson21 .css-sidebar.open {
+  width: 280px;
+}
+
+/* Top-level list */
+#lesson21 .css-sidebar .top-level {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#lesson21 .css-sidebar .top-level > li {
+  padding: 12px 16px;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#lesson21 .css-sidebar .top-level > li:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Tooltip text */
+#lesson21 .css-sidebar .top-level > li[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #242e49;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-left: 8px;
+  font-size: 0.85rem;
+}
+
+/* Sub-menu */
+#lesson21 .css-sidebar .sub-menu {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: rgba(0,0,0,0.05);
+}
+#lesson21 .css-sidebar .top-level > li.open > .sub-menu {
+  max-height: 500px; /* enough to show items */
+}
+#lesson21 .css-sidebar .sub-menu li {
+  padding: 8px 32px;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#lesson21 .css-sidebar .sub-menu li:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Menu button */
+#lesson21 #css-menu-btn {
+  position: relative;
+  z-index: 2100;
+  margin: 15px 0;
+}
