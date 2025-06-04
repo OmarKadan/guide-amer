@@ -180,3 +180,143 @@ h1 {
   z-index: 2100;
   margin: 15px 0;
 }
+
+
+/* Scoped under #download-section to avoid clashes */
+#download-section .download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: rgba(49, 51, 170, 0.3); /* semi-transparent cyan */
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid rgba(32, 82, 156, 0.6);
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+#download-section .download-btn:hover {
+  background: rgba(32, 82, 156, 0.6);
+  border-color: rgba(32, 82, 156, 0.6);
+}
+
+/* Style for the Arabic text */
+#download-section p {
+  font-family: 'Merriweather', serif;
+  color: #242E49;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+
+#lesson27 {
+      font-family: 'Cairo', sans-serif;
+      color: #333;
+      padding: 20px;
+      line-height: 1.8;
+    }
+    #lesson27 h1 {
+      font-size: 2rem;
+      color: #2a9d8f;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    #lesson27 h2 {
+      font-size: 1.6rem;
+      color: #264653;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+    #lesson27 p {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    #lesson27 .code-box {
+      background-color: #2e2e2e;
+      color: #f1f1f1;
+      padding: 15px;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+    /* تصميم القوائم التوضيحية */
+    #lesson27 .example-menu {
+      position: relative;
+      margin: 30px auto;
+      width: 100%;
+      max-width: 800px;
+    }
+    #lesson27 .hover-zone {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 20px;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0); /* شفافية تامة */
+    }
+    #lesson27 .menu {
+      position: fixed;
+      top: -65px; left: 0;
+      width: 100%;
+      background-color: rgba(196, 147, 124, 0.7);
+      transition: top 0.3s ease;
+      z-index: 9;
+    }
+    #lesson27 .menu-container:hover .menu {
+      top: 0;
+    }
+    #lesson27 .menu-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #lesson27 .logo {
+      font-size: 1.8rem;
+      color: #312d2d;
+    }
+    #lesson27 .links a {
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #312d2d;
+      border-radius: 8px;
+      padding: 6px 12px;
+      transition: background-color 0.3s ease;
+      margin-left: 12px;
+    }
+    #lesson27 .links a:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    #lesson27 .menu-divider {
+      position: relative;
+      text-align: center;
+      margin-top: 10px;
+    }
+    #lesson27 .menu-divider::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #312d2d;
+      z-index: 1;
+    }
+    #lesson27 .menu-divider span {
+      position: relative;
+      background-color: rgba(196, 147, 124, 0.7);
+      padding: 0 10px;
+      font-size: 1rem;
+      color: #312d2d;
+      z-index: 2;
+    }
+    #lesson27 #lesson27-sample {
+      margin-top: 300px;
+      font-size: 4rem;
+      text-align: center;
+      color: #312d2d;
+    }
